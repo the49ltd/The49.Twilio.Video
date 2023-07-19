@@ -1,0 +1,6 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='RemoteAudioTrackStats']/*[not(
+        @name='audioLevel' or
+        @name='jitter'
+    )]" />
+</metadata>

@@ -1,0 +1,16 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='VideoView']/*[not(
+        @name='VideoView' or
+        @name='applyZOrder' or
+        @name='getMirror' or
+        @name='getVideoScaleType' or
+        @name='onAttachedToWindow' or
+        @name='onDetachedFromWindow' or
+        @name='onFrame' or
+        @name='onSizeChanged' or
+        @name='onVisibilityChanged' or
+        @name='setListener' or
+        @name='setMirror' or
+        @name='setVideoScaleType'
+    )]" />
+</metadata>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0-ios</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>true</ImplicitUsings>
+		<IsBindingProject>true</IsBindingProject>
+		<Title>The49.Twilio.Video.iOS</Title>
+		<Version>1.0.0.0-alpha.2</Version>
+		<Authors>The people @ The49 Ltd.</Authors>
+		<Company>The49 Lt.d</Company>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<NativeReference Include="../TwilioVideoIOS/TwilioVideo.framework" Kind="Framework" SmartLink="False" />
+		<ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+		<ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+		<Content Include="The49.Twilio.Video.iOS.targets">
+			<PackagePath>build\The49.Twilio.Video.iOS.targets</PackagePath>
+		</Content>
+	</ItemGroup>
+</Project>

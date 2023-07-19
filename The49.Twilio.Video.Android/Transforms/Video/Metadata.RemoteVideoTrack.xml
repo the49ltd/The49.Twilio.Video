@@ -1,0 +1,13 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='RemoteAudioTrack']/*[not(
+        @name='addSink' or
+        @name='getPriority' or
+        @name='getSid' or
+        @name='isSwitchedOff' or
+        @name='removeSink' or
+        @name='setContentPreferences' or
+        @name='setPriority' or
+        @name='switchOff' or
+        @name='switchOn'
+    )]" />
+</metadata>

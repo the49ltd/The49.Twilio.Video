@@ -1,0 +1,47 @@
+<metadata>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantReconnected']" name="abstract">true</attr> 
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantReconnecting']" name="abstract">true</attr> 
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onConnected']/parameter[1]" name="managedName">room</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onConnectFailure']/parameter[1]" name="managedName">room</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onConnectFailure']/parameter[2]" name="managedName">exception</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onDisconnected']/parameter[1]" name="managedName">room</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onDisconnected']/parameter[2]" name="managedName">exception</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantConnected']/parameter[1]" name="managedName">room</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantConnected']/parameter[2]" name="managedName">participant</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantDisconnected']/parameter[1]" name="managedName">room</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantDisconnected']/parameter[2]" name="managedName">participant</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantReconnected']/parameter[1]" name="managedName">room</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantReconnected']/parameter[2]" name="managedName">participant</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantReconnecting']/parameter[1]" name="managedName">room</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onParticipantReconnecting']/parameter[2]" name="managedName">participant</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onReconnected']/parameter[1]" name="managedName">room</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onReconnecting']/parameter[1]" name="managedName">room</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onReconnecting']/parameter[2]" name="managedName">exception</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onRecordingStarted']/parameter[1]" name="managedName">room</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/method[@name='onRecordingStopped']/parameter[1]" name="managedName">room</attr>
+
+    <remove-node path="/api/package[@name='com.twilio.video']/interface[@name='Room.Listener']/*[not(
+        @name='onConnected' or
+        @name='onConnectFailure' or
+        @name='onDisconnected' or
+        @name='onDominantSpeakerChanged' or
+        @name='onParticipantConnected' or
+        @name='onParticipantDisconnected' or
+        @name='onParticipantReconnected' or
+        @name='onParticipantReconnecting' or
+        @name='onReconnected' or
+        @name='onReconnecting' or
+        @name='onRecordingStarted' or
+        @name='onRecordingStopped'
+    )]" />
+</metadata>

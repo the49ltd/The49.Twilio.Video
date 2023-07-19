@@ -1,0 +1,8 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='LocalVideoTrackStats']/*[not(
+        @name='capturedFrameRate' or
+        @name='captureDimensions' or
+        @name='dimensions' or
+        @name='frameRate'
+    )]" />
+</metadata>

@@ -1,0 +1,22 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='Room']/*[not(
+        @name='Room.Listener' or
+        @name='Room.State' or
+        @name='disconnect' or
+        @name='getDominantSpeaker' or
+        @name='getLocalParticipant' or
+        @name='getMediaRegion' or
+        @name='getName' or
+        @name='getRemoteParticipants' or
+        @name='getSid' or
+        @name='getState' or
+        @name='getStats' or
+        @name='isAudioProcessorSupported' or
+        @name='isRecording'
+    )]" />
+    <!-- <add-node path="/api/package[@name='com.twilio.video']/class[@name='Room']">
+        <method abstract="false" deprecated="not deprecated" final="false" name="setListener" jni-signature="(Lcom/twilio/video/Room$Listener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" eventName="Room.SetListener">
+            <parameter name="listener" type="com.twilio.video.Room.Listener" jni-type="Lcom/twilio/video/Room$Listener;" />
+          </method>
+    </add-node> -->
+</metadata>

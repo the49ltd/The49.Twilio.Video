@@ -1,0 +1,31 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='IceCandidatePairStats']/*[not(
+        @name='activeCandidatePair' or
+        @name='availableIncomingBitrate' or
+        @name='availableOutgoingBitrate' or
+        @name='bytesReceived' or
+        @name='bytesSent' or
+        @name='consentRequestsReceived' or
+        @name='consentRequestsSent' or
+        @name='consentResponsesReceived' or
+        @name='consentResponsesSent' or
+        @name='currentRoundTripTime' or
+        @name='localCandidateId' or
+        @name='localCandidateIp' or
+        @name='nominated' or
+        @name='priority' or
+        @name='readable' or
+        @name='relayProtocol' or
+        @name='remoteCandidateId' or
+        @name='remoteCandidateIp' or
+        @name='requestsReceived' or
+        @name='requestsSent' or
+        @name='responsesReceived' or
+        @name='retransmissionsReceived' or
+        @name='retransmissionsSent' or
+        @name='state' or
+        @name='totalRoundTripTime' or
+        @name='transportId' or
+        @name='writeable'
+    )]" />
+</metadata>

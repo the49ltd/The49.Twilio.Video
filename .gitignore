@@ -1,0 +1,55 @@
+# Visual Studio temporary files
+.vs/
+*.user
+*.suo
+*.cache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio code files
+.vscode/
+
+# NuGet packages
+*.nuget.cache
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.exe.config
+packages/
+*.nupkg
+*.snupkg
+
+# Build directories
+*_logs/
+*_cache/
+TestResults/
+[Bb]uild/*
+
+# MAUI artifacts
+*.app/
+*.ipa/
+*.apk/
+*.aab/
+*.msix/
+*.msixbundle/
+*.pkg/
+
+# Other artifacts
+*.userprefs
+*.DS_Store
+thumbs.db
+*.bak
+
+# Exclude specific files
+filename.txt

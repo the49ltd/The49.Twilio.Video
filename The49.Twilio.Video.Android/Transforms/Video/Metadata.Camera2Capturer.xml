@@ -1,0 +1,6 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='Camera2Capturer']/*[not(
+        @name='Camera2Capturer' or
+        @name='com.twilio.video.VideoCapturer'
+    )]" />
+</metadata>

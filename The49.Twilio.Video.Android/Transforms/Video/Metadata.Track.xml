@@ -1,0 +1,6 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/interface[@name='Track']/*[not(
+        @name='getName' or
+        @name='isEnabled'
+    )]" />
+</metadata>

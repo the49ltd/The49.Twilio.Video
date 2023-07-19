@@ -1,0 +1,13 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='AudioOptions.Builder']/*[not(
+        @name='AudioOptions.Builder' or
+        @name='build' or
+        @name='audioJitterBufferFastAccelerate' or
+        @name='autoGainControl' or
+        @name='echoCancellation' or
+        @name='highpassFilter' or
+        @name='noiseSuppression' or
+        @name='stereoSwapping' or
+        @name='typingDetection'
+    )]" />
+</metadata>

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "The49.Twilio.Video.Android", "..\The49.Twilio.Video.Android\The49.Twilio.Video.Android.csproj", "{5D8775AD-0AB1-4219-A444-037BD4FAB5AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The49.Twilio.Video.Sample", "The49.Twilio.Video.Sample.csproj", "{4CAA6C44-25C6-4C6A-9467-D52EA186B386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The49.Twilio.Video.iOS", "..\The49.Twilio.Video.iOS\The49.Twilio.Video.iOS.csproj", "{9CAB3A92-F2C5-457D-A0AD-CE7363D91C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The49.Twilio.Video.Maui", "..\The49.Twilio.Video.Maui\The49.Twilio.Video.Maui.csproj", "{923C078C-54CC-4CC3-8272-67651C5A9D2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D8775AD-0AB1-4219-A444-037BD4FAB5AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8775AD-0AB1-4219-A444-037BD4FAB5AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8775AD-0AB1-4219-A444-037BD4FAB5AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8775AD-0AB1-4219-A444-037BD4FAB5AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CAA6C44-25C6-4C6A-9467-D52EA186B386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CAA6C44-25C6-4C6A-9467-D52EA186B386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CAA6C44-25C6-4C6A-9467-D52EA186B386}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4CAA6C44-25C6-4C6A-9467-D52EA186B386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CAA6C44-25C6-4C6A-9467-D52EA186B386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CAA6C44-25C6-4C6A-9467-D52EA186B386}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9CAB3A92-F2C5-457D-A0AD-CE7363D91C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CAB3A92-F2C5-457D-A0AD-CE7363D91C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CAB3A92-F2C5-457D-A0AD-CE7363D91C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CAB3A92-F2C5-457D-A0AD-CE7363D91C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{923C078C-54CC-4CC3-8272-67651C5A9D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923C078C-54CC-4CC3-8272-67651C5A9D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923C078C-54CC-4CC3-8272-67651C5A9D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923C078C-54CC-4CC3-8272-67651C5A9D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {975A3A7F-D08A-45D6-944F-6FACFF2F8C2E}
+	EndGlobalSection
+EndGlobal

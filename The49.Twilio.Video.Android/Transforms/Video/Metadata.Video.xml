@@ -1,0 +1,14 @@
+<metadata>
+    <attr path="/api/package[@name='com.twilio.video']/class[@name='Video']" name="managedName">TwilioVideo</attr>
+
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='Video']/*[not(
+        @name='connect' or
+        @name='getAudioDevice' or
+        @name='getLogLevel' or
+        @name='getModuleLogLevel' or
+        @name='getVersion' or
+        @name='setAudioDevice' or
+        @name='setLogLevel' or
+        @name='setModuleLogLevel'
+    )]" />
+</metadata>

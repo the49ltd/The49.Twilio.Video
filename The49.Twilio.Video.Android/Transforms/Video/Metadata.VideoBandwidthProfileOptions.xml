@@ -1,0 +1,13 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='VideoBandwidthProfileOptions']/*[not(
+        @name='Builder' or
+        @name='getClientTrackSwitchOffControl' or
+        @name='getDominantSpeakerPriority' or
+        @name='getMaxSubscriptionBitrate' or
+        @name='getMaxTracks' or
+        @name='getMode' or
+        @name='getRenderDimensions' or
+        @name='getTrackSwitchOffMode' or
+        @name='getVideoContentPreferencesMode'
+    )]" />
+</metadata>

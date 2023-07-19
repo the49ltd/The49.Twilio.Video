@@ -1,0 +1,7 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='DataTrackOptions']/*[not(
+        @name='DEFAULT_DATA_TRACK_OPTIONS' or
+        @name='DEFAULT_MAX_PACKET_LIFE_TIME' or
+        @name='DEFAULT_MAX_RETRANSMITS'
+    )]" />
+</metadata>

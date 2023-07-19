@@ -1,0 +1,90 @@
+<metadata>
+    <attr path="/api/package[@name='com.twilio.video']/class[@name='RemoteParticipant']/method[@name='setListener']"   
+    name="eventName">RemoteParticipant.SetListener</attr> 
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackDisabled']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackDisabled']/parameter[2]" name="managedName">remoteAudioTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackEnabled']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackEnabled']/parameter[2]" name="managedName">remoteAudioTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackPublished']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackPublished']/parameter[2]" name="managedName">remoteAudioTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackSubscribed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackSubscribed']/parameter[2]" name="managedName">remoteAudioTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackSubscribed']/parameter[3]" name="managedName">remoteAudioTrack</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackSubscriptionFailed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackSubscriptionFailed']/parameter[2]" name="managedName">remoteAudioTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackSubscriptionFailed']/parameter[3]" name="managedName">exception</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackUnpublished']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackUnpublished']/parameter[2]" name="managedName">remoteAudioTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackUnsubscribed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackUnsubscribed']/parameter[2]" name="managedName">remoteAudioTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onAudioTrackUnsubscribed']/parameter[3]" name="managedName">remoteAudioTrack</attr>
+
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackPublished']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackPublished']/parameter[2]" name="managedName">remoteDataTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackSubscribed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackSubscribed']/parameter[2]" name="managedName">remoteDataTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackSubscribed']/parameter[3]" name="managedName">remoteDataTrack</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackSubscriptionFailed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackSubscriptionFailed']/parameter[2]" name="managedName">remoteDataTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackSubscriptionFailed']/parameter[3]" name="managedName">exception</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackUnpublished']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackUnpublished']/parameter[2]" name="managedName">remoteDataTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackUnsubscribed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackUnsubscribed']/parameter[2]" name="managedName">remoteDataTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onDataTrackUnsubscribed']/parameter[3]" name="managedName">remoteDataTrack</attr>
+
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackDisabled']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackDisabled']/parameter[2]" name="managedName">remoteVideoTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackEnabled']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackEnabled']/parameter[2]" name="managedName">remoteVideoTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackPublished']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackPublished']/parameter[2]" name="managedName">remoteVideoTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackSubscribed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackSubscribed']/parameter[2]" name="managedName">remoteVideoTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackSubscribed']/parameter[3]" name="managedName">remoteVideoTrack</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackSubscriptionFailed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackSubscriptionFailed']/parameter[2]" name="managedName">remoteVideoTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackSubscriptionFailed']/parameter[3]" name="managedName">exception</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackUnpublished']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackUnpublished']/parameter[2]" name="managedName">remoteVideoTrackPublication</attr>
+
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackUnsubscribed']/parameter[1]" name="managedName">remoteParticipant</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackUnsubscribed']/parameter[2]" name="managedName">remoteVideoTrackPublication</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteParticipant.Listener']/method[@name='onVideoTrackUnsubscribed']/parameter[3]" name="managedName">remoteVideoTrack</attr>
+
+
+
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='RemoteParticipant']/*[not(
+        @name='RemoteParticipant' or
+        @name='RemoteParticipant.Listener' or
+        @name='getAudioTracks' or
+        @name='getDataTracks' or
+        @name='getIdentity' or
+        @name='getNetworkQualityLevel' or
+        @name='getRemoteAudioTracks' or
+        @name='getRemoteDataTracks' or
+        @name='getRemoteVideoTracks' or
+        @name='getSid' or
+        @name='getState' or
+        @name='getVideoTracks' or
+        @name='setListener'
+    )]" />
+</metadata>

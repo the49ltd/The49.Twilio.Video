@@ -1,0 +1,36 @@
+<metadata>
+    <remove-node
+        path="/api/package[@name='tvi.webrtc']/class[not(
+        @name='Camera2Enumerator' or
+        @name='CameraEnumerationAndroid' or
+        @name='CameraEnumerationAndroid.CaptureFormat' or
+        @name='CameraEnumerationAndroid.CaptureFormat.FramerateRange' or
+        @name='Size' or
+        @name='RendererCommon' or
+        @name='RendererCommon.ScalingType' or
+        @name='SurfaceViewRenderer' or
+        @name='CameraCapturer' or
+        @name='MediaSource' or
+        @name='VideoSource'
+    )]" />
+    <remove-node
+        path="/api/package[@name='tvi.webrtc']/interface[not(
+            @name='CameraVideoCapturer' or
+            @name='CameraVideoCapturer.CameraEventsHandler' or
+            @name='RendererCommon.RendererEvents' or
+            @name='VideoCapturer' or
+            @name='VideoSink' or
+            @name='AudioSink'
+        )]" />
+
+
+    <remove-node path="/api/package[@name='tvi.webrtc']/interface[@name='CameraVideoCapturer']/*" />
+    <remove-node path="/api/package[@name='tvi.webrtc']/interface[@name='VideoCapturer']/*" />
+
+    <remove-node path="/api/package[@name='tvi.webrtc']/class[@name='SurfaceViewRenderer']/*[not(
+        @name='tvi.webrtc.VideoSink'
+    )]" />
+
+    <remove-node path="/api/package[@name='tvi.webrtc.audio']/*" />
+    <remove-node path="/api/package[@name='tvi.webrtc.voiceengine']/*" />
+</metadata>

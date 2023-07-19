@@ -1,0 +1,10 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Target Name="CopyFrameworks" AfterTargets="CopyFilesToOutputDirectory">
+    <ItemGroup>
+      <FrameworkFiles Include="$(MSBuildThisFileDirectory)TwilioVideo.framework\**\*.*" />
+    </ItemGroup>
+    <Copy
+      SourceFiles="@(FrameworkFiles)"
+      DestinationFolder="$(TargetDir)Frameworks\%(RecursiveDir)" />
+  </Target>
+</Project>

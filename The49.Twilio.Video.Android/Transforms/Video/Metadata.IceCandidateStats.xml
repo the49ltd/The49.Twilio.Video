@@ -1,0 +1,13 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='IceCandidateStats']/*[not(
+        @name='candidateType' or
+        @name='deleted' or
+        @name='ip' or
+        @name='isRemote' or
+        @name='port' or
+        @name='priority' or
+        @name='protocol' or
+        @name='transportId' or
+        @name='url'
+    )]" />
+</metadata>

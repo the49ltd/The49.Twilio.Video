@@ -1,0 +1,9 @@
+﻿<metadata>
+	<remove-node path="/api/package[@name='com.the49.twiliovideo']/*[@name='BuildConfig']" />
+	<remove-node path="/api/package[@name='com.getkeepsafe.relinker']/*" />
+	<remove-node path="/api/package[@name='com.getkeepsafe.relinker.elf']/*" />
+
+	<!--Adjusting namespaces-->
+	<attr path="/api/package[@name='com.twilio.video']" name="managedName">Twilio.Video</attr>
+	
+</metadata>

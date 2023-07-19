@@ -1,0 +1,9 @@
+build/*
+
+!build/outputs/
+build/outputs/*
+
+!build/outputs/aar
+build/outputs/aar/*
+
+!build/outputs/aar/twiliovideo-release.aar

@@ -1,0 +1,3 @@
+<metadata>
+    <remove-node path="/api/package[@name='tvi.webrtc']/class[@name='VideoSource']/*" />
+</metadata>

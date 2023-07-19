@@ -1,0 +1,10 @@
+<metadata>
+    <remove-node path="/api/package[@name='tvi.webrtc']/class[@name='Camera2Enumerator']/*[not(
+        @name='Camera2Enumerator' or
+        @name='getDeviceNames' or
+        @name='getSupportedFormats' or
+        @name='isBackFacing' or
+        @name='isFrontFacing' or
+        @name='isSupported'
+    )]" />
+</metadata>

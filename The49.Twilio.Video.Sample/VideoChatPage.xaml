@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:twilio="https://schemas.twilio.com/dotnet/2023/maui"
+             x:Class="The49.Twilio.Video.Sample.VideoChatPage"
+             Title="VideoChatPage">
+    <Grid>
+        <twilio:TwilioVideoView x:Name="remoteVideoView" Margin="0,-50" />
+        <Border Stroke="Transparent"
+              StrokeShape="RoundRectangle 20"
+              VerticalOptions="End"
+              HorizontalOptions="End"
+              Margin="10">
+            <Grid HeightRequest="200"
+                WidthRequest="130">
+                <twilio:TwilioVideoView x:Name="localVideoView" />
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

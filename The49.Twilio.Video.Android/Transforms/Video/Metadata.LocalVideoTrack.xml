@@ -1,0 +1,15 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='LocalVideoTrack']/*[not(
+        @name='addSink' or
+        @name='create' or
+        @name='enable' or
+        @name='getName' or
+        @name='getVideoCapturer' or
+        @name='getVideoFormat' or
+        @name='getVideoSource' or
+        @name='isEnabled' or
+        @name='onCaptureParametersChanged' or
+        @name='release' or
+        @name='removeSink'
+    )]" />
+</metadata>

@@ -1,0 +1,28 @@
+<metadata>
+    <attr path="/api/package[@name='com.twilio.video']/class[@name='LocalParticipant']/method[@name='setListener']" name="eventName">LocalParticipant.SetListener</attr> 
+    <remove-attr path="/api/package[@name='com.twilio.video']/class[@name='LocalParticipant']/method[@name='setListener']/parameter[@name='listener']" name="not-null" />
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='LocalParticipant']/*[not(
+        @name='getAudioTracks' or
+        @name='getDataTracks' or
+        @name='getIdentity' or
+        @name='getLocalAudioTracks' or
+        @name='getLocalDataTracks' or
+        @name='getLocalVideoTracks' or
+        @name='getNetworkQualityLevel' or
+        @name='getSid' or
+        @name='getSignalingRegion' or
+        @name='getState' or
+        @name='getVideoTracks' or
+        @name='publishTrack' or
+        @name='publishTrack' or
+        @name='publishTrack' or
+        @name='publishTrack' or
+        @name='publishTrack' or
+        @name='publishTrack' or
+        @name='setEncodingParameters' or
+        @name='setListener' or
+        @name='unpublishTrack' or
+        @name='unpublishTrack' or
+        @name='unpublishTrack'
+    )]" />
+</metadata>

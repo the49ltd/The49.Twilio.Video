@@ -1,0 +1,4 @@
+<metadata>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteDataTrack.Listener']/method[1]" name="managedName">onMessageWithString</attr>
+    <attr path="/api/package[@name='com.twilio.video']/interface[@name='RemoteDataTrack.Listener']/method[2]" name="managedName">onMessageWithBuffer</attr>
+</metadata>

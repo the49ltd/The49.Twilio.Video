@@ -1,0 +1,11 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='RemoteDataTrackPublication']/*[not(
+        @name='getDataTrack' or
+        @name='getPublishPriority' or
+        @name='getRemoteDataTrack' or
+        @name='getTrackName' or
+        @name='getTrackSid' or
+        @name='isTrackEnabled' or
+        @name='isTrackSubscribed'
+    )]" />
+</metadata>

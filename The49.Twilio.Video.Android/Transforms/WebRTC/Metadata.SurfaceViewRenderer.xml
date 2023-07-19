@@ -1,0 +1,3 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='SurfaceViewRenderer']/*" />
+</metadata>

@@ -1,0 +1,7 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='RemoteAudioTrack']/*[not(
+        @name='enablePlayback' or
+        @name='getSid' or
+        @name='isPlaybackEnabled'
+    )]" />
+</metadata>

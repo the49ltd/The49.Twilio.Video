@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0-android</TargetFramework>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Title>The49.Twilio.Video.Android</Title>
+		<Version>1.0.0.0-alpha.1</Version>
+		<Authors>The people @ The49 Ltd.</Authors>
+		<Company>The49 Lt.d</Company>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;BG8A00</NoWarn>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1701;1702;BG8A00</NoWarn>
+	</PropertyGroup>
+	<ItemGroup>
+		<LibraryProjectZip Include="..\AndroidStudio\TwilioVideo\build\outputs\aar\twiliovideo-release.aar">
+			<Link>Jars\twiliovideo-release.aar</Link>
+		</LibraryProjectZip>
+	</ItemGroup>
+</Project>

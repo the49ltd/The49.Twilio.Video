@@ -1,0 +1,23 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='ConnectOptions.Builder']/*[not(
+        @name='ConnectOptions.Builder' or
+        @name='audioTracks' or
+        @name='bandwidthProfile' or
+        @name='build' or
+        @name='dataTracks' or
+        @name='enableAutomaticSubscription' or
+        @name='enableDominantSpeaker' or
+        @name='enableIceGatheringOnAnyAddressPorts' or
+        @name='enableInsights' or
+        @name='enableNetworkQuality' or
+        @name='encodingParameters' or
+        @name='iceOptions' or
+        @name='networkQualityConfiguration' or
+        @name='preferAudioCodecs' or
+        @name='preferVideoCodecs' or
+        @name='region' or
+        @name='roomName' or
+        @name='videoEncodingMode' or
+        @name='videoTracks'
+    )]" />
+</metadata>

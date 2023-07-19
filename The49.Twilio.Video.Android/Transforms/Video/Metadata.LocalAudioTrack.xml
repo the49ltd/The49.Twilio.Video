@@ -1,0 +1,11 @@
+<metadata>
+    <remove-node path="/api/package[@name='com.twilio.video']/class[@name='LocalAudioTrack']/*[not(
+        @name='create' or
+        @name='addSink' or
+        @name='enable' or
+        @name='getName' or
+        @name='isEnabled' or
+        @name='release' or
+        @name='removeSink'
+    )]" />
+</metadata>
