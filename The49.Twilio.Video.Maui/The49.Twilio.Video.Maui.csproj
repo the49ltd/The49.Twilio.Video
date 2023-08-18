@@ -11,9 +11,17 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 
 		<Title>The49.Twilio.Video.Maui</Title>
-		<Version>1.0.0.0-alpha.2</Version>
+		<Version>1.0.0.0-alpha.3</Version>
 		<Authors>The people @ The49 Ltd.</Authors>
-		<Company>The49 Lt.d</Company>
+		<Company>The49 Ltd.</Company>
+		<PackageProjectUrl>https://github.com/the49ltd/The49.Twilio.Video</PackageProjectUrl>
+		<PackageReadmeFile>NUGET-README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/the49ltd/The49.Twilio.Video</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>twilio;maui;android;ios</PackageTags>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageIcon>logo.png</PackageIcon>
+		<Description>.NET MAUI bindings for the Twilio video SDK</Description>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 		<CreatePackage>false</CreatePackage>
@@ -24,5 +32,19 @@
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
 		<!--<PackageReference Include="The49.Twilio.Video.iOS" />-->
 		<ProjectReference Include="..\The49.Twilio.Video.iOS\The49.Twilio.Video.iOS.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\LICENSE.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\logo.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\NUGET-README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 </Project>
