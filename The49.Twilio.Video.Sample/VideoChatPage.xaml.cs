@@ -45,21 +45,37 @@ public partial class VideoChatPage : ContentPage
         // Create the local audio track
         _localAudioTrack = LocalAudioTrack.Create(true);
 
-        // Capture the video from the camera. We pick the front facing camera for now
-        var cameraCapturer = CameraCapturer.Create(CameraPosition.Front);
+        // Check if we have a virtual device. The iOS simulator does not have a camera
+        if (DeviceInfo.Current.DeviceType == DeviceType.Physical
+            || DeviceInfo.Current.Platform == DevicePlatform.Android)
+        {
+            // Capture the video from the camera. We pick the front facing camera for now
+            var cameraCapturer = CameraCapturer.Create(CameraPosition.Front);
 
-        // Create the local video track from the camera capturer
-        _localVideoTrack = LocalVideoTrack.Create(true, cameraCapturer);
+            // Create the local video track from the camera capturer
+            _localVideoTrack = LocalVideoTrack.Create(true, cameraCapturer);
 
-        // Display the local video in the video view
-        _localVideoTrack.AddSink(localVideoView);
+            // Display the local video in the video view
+            _localVideoTrack.AddSink(localVideoView);
+
+        } else
+        {
+            _ = DisplayAlert("No Camera",
+                "iOS Simulator does not provide a camera. You will still see incoming video.",
+                "OK");
+        }
 
         // Configure the connection options. Pass the token and the tracks we want to send to remote participants
-        var options = new ConnectOptions.Builder(token)
-            .RoomName(RoomName)
-            .VideoTracks(new List<LocalVideoTrack> { _localVideoTrack })
-            .AudioTracks(new List<LocalAudioTrack> { _localAudioTrack })
-            .Build();
+        var builder = new ConnectOptions.Builder(token)
+            .RoomName(RoomName);
+
+        if (_localVideoTrack != null)
+            builder.VideoTracks(new List<LocalVideoTrack> { _localVideoTrack });
+
+        if (_localAudioTrack != null)
+            builder.AudioTracks(new List<LocalAudioTrack> { _localAudioTrack });
+
+        var options = builder.Build();
 
         _room = TwilioVideoService.Default.Connect(options);
 
@@ -73,8 +89,14 @@ public partial class VideoChatPage : ContentPage
     {
         base.OnDisappearing();
 
-        _localVideoTrack.Release();
-        _localAudioTrack.Release();
+        // remove events so we don't leak anything
+        _room.ConnectFailure -= OnRoomConnectFailure;
+        _room.Connected -= OnRoomConnected;
+        _room.ParticipantConnected -= OnParticipantConnected;
+
+        // null check
+        _localVideoTrack?.Release();
+        _localAudioTrack?.Release();
         _room.Disconnect();
     }
 
