@@ -46,7 +46,8 @@ public partial class VideoChatPage : ContentPage
         _localAudioTrack = LocalAudioTrack.Create(true);
 
         // Check if we have a virtual device. The iOS simulator does not have a camera
-        if (DeviceInfo.Current.DeviceType == DeviceType.Physical)
+        if (DeviceInfo.Current.DeviceType == DeviceType.Physical
+            || DeviceInfo.Current.Platform == DevicePlatform.Android)
         {
             // Capture the video from the camera. We pick the front facing camera for now
             var cameraCapturer = CameraCapturer.Create(CameraPosition.Front);
@@ -57,6 +58,11 @@ public partial class VideoChatPage : ContentPage
             // Display the local video in the video view
             _localVideoTrack.AddSink(localVideoView);
 
+        } else
+        {
+            _ = DisplayAlert("No Camera",
+                "iOS Simulator does not provide a camera. You will still see incoming video.",
+                "OK");
         }
 
         // Configure the connection options. Pass the token and the tracks we want to send to remote participants
